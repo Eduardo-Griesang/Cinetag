@@ -19,13 +19,19 @@ const Home = () => {
         getApi()
     },[])
 
+    console.log(Api)
+ 
     return(
         <>
             <Banner image={image} />
 
-            <MovieTrack API={Api} genre="Horror" />
-            <MovieTrack API={Api} genre="Action" />
-            
+            <MovieTrack API={Api} genre="Horror" number={7} />
+            <MovieTrack API={Api} genre="Action" number={7} />
+            <MovieTrack API={Api} genre="Comedy" number={7} />
+            <MovieTrack API={Api} genre="Drama" number={7} />
+            <MovieTrack API={Api} genre="Mystery" number={7} />
+            <MovieTrack API={Api} genre="Animated" number={7} />
+            <div className=" bg-slate-900 py-10"></div>
         </>
     )
 }

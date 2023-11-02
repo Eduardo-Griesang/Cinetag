@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import FavoritesProvider from './context/Favorites';
 import NotFound from './pages/NotFound';
 import Movie from './pages/Movie';
+import Genre from './pages/Genre';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/favorites' element={<Favorites />} />
           <Route path='/Movie/:name' element={<Movie />} />
+          <Route path='/Genre/:genre' element={<Genre />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </FavoritesProvider>
