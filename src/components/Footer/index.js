@@ -3,8 +3,8 @@ import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-
 
 const Footer = () => {
     return(
-        <footer className="flex justify-between px-40 py-7 bg-slate-950 text-zinc-100 align-middle text-xl">
-            <h5>Developed by Eduardo</h5>
+        <footer className="flex flex-col lg:flex-row lg:px-10 justify-between items-center py-7 bg-slate-950 text-zinc-100 align-middle text-xl">
+            <h5 className="pb-5 lg:pb-0">Developed by Eduardo</h5>
             <ul className="flex gap-10">
                 <li>
                     <a href="https://github.com/Eduardo-Griesang"><FontAwesomeIcon icon={faGithub} style={{color: "#f4f4f5",}} size="lg" /></a>
